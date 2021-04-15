@@ -1,257 +1,335 @@
-html, body{
-    display: block;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    width: 100%;
+html,
+body {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+   width: 100%;
+   scroll-behavior: smooth;
 }
 
 /* Styles navbar */
 
 .navbar {
-    box-shadow: 0 5px 20px 0 rgba(11,7,110,.04);
-    background: #3d4f65;
-    padding: 0;
+   box-shadow: 0 5px 20px 0 rgba(11, 7, 110, 0.04);
+   background: #3d4f65;
+   padding: 0;
 }
 
 .navbar-brand {
-    position: absolute;
-    bottom: -2.625rem;
+   position: absolute;
+   bottom: -2.625rem;
 }
 
-.navbar__logo_img{
-    height: 5.875rem;
-    z-index: 1;
-    position: relative;
+.navbar__logo_img {
+   height: 5.875rem;
+   z-index: 1;
+   position: relative;
 }
 
 .menu-1 {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-.nav-item{
-    color: white;
-    font-size: 1em;
-    padding: 1.375rem;
+.nav-item {
+   color: white;
+   font-size: 1em;
+   padding: 1.375rem;
 }
 
 .nav-item:hover {
-    background: #374051;
-    color: white;
-    text-decoration: none;
+   background: #374051;
+   color: white;
+   text-decoration: none;
 }
 
 .navbar-toggler {
-    background: transparent;
-    border: 0;
-    height: 20px;
-    outline: 0;
-    padding: 0;
-    position: relative;
-    width: 20px;
-    outline: none !important;
+   background: transparent;
+   border: 0;
+   height: 20px;
+   outline: 0;
+   padding: 0;
+   position: relative;
+   width: 20px;
+   outline: none !important;
 }
 .navbar-toggler:before {
-    top: 1%;
-    transform-origin: center;
+   top: 1%;
+   transform-origin: center;
 }
-.navbar-toggler:after, .navbar-toggler:before {
-    background-color: white;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: all .2s linear;
-    width: 100%;
+.navbar-toggler:after,
+.navbar-toggler:before {
+   background-color: white;
+   content: '';
+   display: block;
+   height: 2px;
+   left: 50%;
+   position: absolute;
+   transform: translateX(-50%);
+   transition: all 0.2s linear;
+   width: 100%;
 }
 .screen-reader-text {
-    border: 0;
-    clip: rect(1px,1px,1px,1px);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute!important;
-    width: 1px;
-    word-wrap: normal!important;
+   border: 0;
+   clip: rect(1px, 1px, 1px, 1px);
+   -webkit-clip-path: inset(50%);
+   clip-path: inset(50%);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute !important;
+   width: 1px;
+   word-wrap: normal !important;
 }
-
 
 /* section types of houses */
 
-
 .types-houses {
-    margin-top: 100px;
+   margin-top: 100px;
 }
 
 .title-main-types-houses {
-    color: #48b189;
-    font-size: 28px;
+   color: #48b189;
+   font-size: 28px;
 }
 
 .paragraph-types-houses {
-    color: #6a6a6a;
-    font-weight: 500;
+   color: #6a6a6a;
+   font-weight: 500;
 }
 
 .list-of-types-houses {
-    margin-top: 100px;
+   margin-top: 100px;
 }
 
 .card-container-types-house {
-    margin-top: 84px
+   margin-top: 84px;
 }
 
 .card {
-    border: none;
+   border: none;
 }
 
 .card-container-title {
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
 }
 
 .card-type-house {
-    color: white;
+   color: white;
 }
 
 .card-type-bg-1 {
-    background: #e16e35;
+   background: #e16e35;
 }
 
 .card-type-bg-2 {
-    background: #f7b233;
+   background: #f7b233;
 }
 
 .card-type-bg-3 {
-    background: #48b189;
+   background: #48b189;
 }
 
 .card-container-title {
-    margin-bottom: 22px;
+   margin-bottom: 22px;
 }
 
 .card-type-house p {
-    font-size: 14px;
+   font-size: 14px;
 }
 
 .card-type-house .card-body {
-    margin-bottom: 28px;
+   margin-bottom: 28px;
 }
 
 .card-container-title-icon {
-    width: 3.125rem !important;
+   width: 3.125rem !important;
 }
 
 .card-container-title-text h4 {
-    margin: 0;
-    font-weight: 400;
+   margin: 0;
+   font-weight: 400;
 }
 
 .card-container-title-text span {
-    font-weight: 500;
-    font-size: 14px;
+   font-weight: 500;
+   font-size: 14px;
 }
 
 .row-floor {
-    display: flex;
-    flex-direction: column;
-    gap: 20px
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 
 .floor-card {
-    background-image: url(./assets/first-floor1.jpg);
-    border-radius: 5px;
-    background-size: cover;
-    height: 50%;
-    position: relative;
+   border-radius: 5px;
+   background-size: cover;
+   height: 50%;
+   position: relative;
+}
+
+.bg-floor-1 {
+   background-image: url(./assets/first-floor1.jpg);
+}
+
+.bg-floor-2 {
+   background-image: url(./assets/second-floor.jpg);
 }
 
 .floor-card-hashtag {
-    border-radius: 3px;
-    color: white;
-    width: fit-content;
-    padding: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 1.5rem;
+   border-radius: 3px;
+   color: white;
+   width: fit-content;
+   padding: 5px;
+   position: absolute;
+   bottom: 0;
+   left: 1.5rem;
 }
-
 
 /* section urbanism-map */
 
 .urbanism-map {
-    margin-top: 100px
+   margin-top: 100px;
 }
 
 .urbanism-map__title {
-    color: #48b189;
+   color: #48b189;
 }
 
 .urbanism-map__img {
-    width: inherit;
+   width: inherit;
 }
 
 .urbanism-map-type {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-top: 10px;
 }
 
 .square {
-    height: 25px;
-    width: 25px;
-    border-radius: 3px;
+   height: 25px;
+   width: 25px;
+   border-radius: 3px;
 }
 
-.urbanism-map-type span{
-    font-weight: 600;
-    color: #656565;
+.urbanism-map-type span {
+   font-weight: 600;
+   color: #656565;
+}
+
+.banner {
+   margin-top: 4rem;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   background: linear-gradient(rgb(72 177 137 / 50%), rgb(72 177 137 / 50%)),
+      url(./assets/parallax.jpg) no-repeat fixed;
+   background-size: cover;
+   color: white;
+}
+
+.banner h1 {
+   font-size: 4em;
+}
+
+.banner p {
+   font-size: 1.2em;
+}
+
+#contact {
+   margin-top: 100px;
+}
+.container-title-contact {
+   text-align: center;
+}
+
+.title-contact {
+   color: #48b189;
+}
+
+.card-contact {
+   background: #fff;
+   padding: 25px;
+}
+
+.title-card-contact {
+   font-size: 24px;
+}
+
+.paragraph-contact {
+   color: #676e8b;
+   font-size: 16px;
+}
+
+.footer {
+   padding: 20px;
+   background-color: #fff;
+   margin-top: 20px;
+   border-top: 1px solid #d2d6de;
+   width: 100%;
+}
+
+.footer .container {
+   text-align: center;
+}
+
+.footer-dash p {
+   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
-    .navbar-expand-md .navbar-nav, .menu-1 {
-        flex-direction: row;
-        display: flex;
-        align-items: center;
-    }
+   .navbar-expand-md .navbar-nav,
+   .menu-1 {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+   }
 }
 
 @media (max-width: 992px) {
-    .nav-item {
-        font-size: 14px;
-        padding: 25px 5px
-    }
+   .nav-item {
+      font-size: 14px;
+      padding: 25px 5px;
+   }
 
-    .navbar__logo_img {
-        height: 4.875rem;
-    }
+   .navbar__logo_img {
+      height: 4.875rem;
+   }
 }
 
 @media (max-width: 768px) {
-    .navbar-brand {
-        position: unset;
-        bottom: auto;
-        padding: 0;
-    }
+   .navbar-brand {
+      position: unset;
+      bottom: auto;
+      padding: 0;
+   }
 
-    .nav-item {
-        font-size: 16px;
-    }
+   .nav-item {
+      font-size: 16px;
+   }
 
-    .navbar__logo_img {
-        height: 3.5rem;
-    }
+   .navbar__logo_img {
+      height: 3.5rem;
+   }
 
-    .floor-card {
-        height: 13rem;
-        margin-top: 15px
-    }
+   .floor-card {
+      height: 13rem;
+      margin-top: 15px;
+   }
+
+   .banner h1 {
+      font-size: 2.5em;
+   }
+
+   .banner p {
+      font-size: 1em;
+   }
 }
